@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postres Rodriguez</title>
+    <link href="Css/estilos.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="media/favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F7BB9B;
+            color: #333;
+            overflow-x: hidden; /* Elimina el scroll horizontal */
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #F1CDD7;
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            position: relative;
+        }
+        header img {
+            vertical-align: middle;
+        }
+        nav {
+        	text-align: center;
+            background-color: #F1CDD7;
+            padding: 25px;
+			text-align: center; /* Asegúrate de que todo el contenido en el nav esté centrado horizontalmente */
+			width: 55%;
+			max-width: 1300px;
+			margin: 20px auto;
+        }
+        nav li {
+            margin: 0 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #e07b00;
+        }
+        section {
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column; /* Cambia a columna para scroll vertical */
+            align-items: center;
+            gap: 20px; /* Espacio entre los elementos */
+        }
+        .button-container div {
+            max-width: 100%; /* Asegura que el contenedor se ajuste al ancho de la pantalla */
+            width: 100%; /* Asegura que el div no sea más ancho que la pantalla */
+            max-width: 350px; /* Ajusta el máximo ancho del elemento */
+            box-sizing: border-box; /* Incluye padding y border en el ancho total */
+        }
+        .cake-button {
+            width: 100%;
+            height: 400px; /* Ajusta la altura de las imágenes */
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .cake-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        .cake-text {
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff8c00;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        table {
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table td {
+            padding: 10px;
+        }
+        table img {
+            width: 300px;
+        }
+        table p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Postres Rodriguez <a href="index.html"><img src="media/logo.png" alt="Postres Rodriguez" width="130"></a>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          
+        </ul>
+    </nav>
+
+    <section id="home">
+        <p>Elaboramos una variada gama de postres para cualquier ocasión o festejo.</p>
+        
+        <div class="button-container" id="catalogo">
+            <div>
+                <a href="catalogo1.html">
+                    <div class="cake-button" style="background-image: url('media/1.jpeg');"></div>
+                    <div class="cake-text">POSTRES</div>
+                </a>
+            </div>
+            <div>
+                <a href="catalogo2.html">
+                    <div class="cake-button" style="background-image: url('media/2.jpeg');"></div>
+                    <div class="cake-text">PASTELES REDONDOS</div>
+                </a>
+            </div>
+             <div>
+                <a href="catalogo3.html">
+                    <div class="cake-button" style="background-image: url('media/9.jpeg');"></div>
+                    <div class="cake-text">PASTELES PLANCHA</div>
+                </a>
+            </div>
+
+            <!-- Añadir más botones de pasteles aquí -->
+        </div>
+    </section>
+</body>
+</html>

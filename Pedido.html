@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Pedido de Pasteles</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F7BB9B;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-container {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    input[type="email"],
+    input[type="text"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 1rem;
+      background-color: #f9f9f9;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1rem;
+      width: 100%;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button:active {
+      background-color: #004085;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html"><img src="media/logo.PNG" alt="Logo" class="logo"></a>
+  <div class="form-container">
+    <h1>Formulario de Pedido de Pasteles</h1>
+    <form action="https://formspree.io/f/xeoqvqpr" method="POST">
+      
+      <label for="name">Tu nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Tu correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Tu número de teléfono:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="cake_type">Tipo de postre:</label>
+      <select id="cake_type" name="cake_type" required>
+        <option value="">Selecciona un tipo de postre</option>
+        <option value="hotcakes">Mini Hotcakes</option>
+        <option value="pastel">Pasteles</option>
+        <option value="pay">Pays de Queso</option>
+        <option value="personalizado">Personalizado</option>
+      </select>
+
+      <label for="quantity">Cantidad de pasteles:</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <label for="fecha"> Fecha:</label>
+      <input type="date" name="fecha" id="fecha"
+
+      <label for="message">Perzonalizado:</label>
+      <textarea id="message" name="message"></textarea>
+      <button type="submit">Realizar Pedido</button>
+    </form>
+  </div>
+    <script> 
+    document.addEventListener('DOMContentLoaded', ()=>
+    {
+      const fechaInput=document.getElementById('fecha');
+
+      const hoy=new Date();
+
+      const fechaMinima=new Date(hoy);
+      fechaMinima.setDate(hoy.getDate()+5);
+
+      fechaInput.min=formatoFecha;
+    });
+</html>

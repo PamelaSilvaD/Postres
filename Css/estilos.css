@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	justify-content: flex-end;
+	background-color: #f7bb96;
+
+}
+
+h1 {
+	font-family: 'Playwrite England SemiJoined', sans-serif; /* Asegúrate de que la fuente esté cargada desde Google Fonts en tu HTML */
+	font-size: 40px;
+	text-align: center;
+	color: #FFFFFF;
+	margin-top: 20px;
+}
+
+h4{
+	font-family: century gothic;
+}
+header, footer {
+	color: #FFFFFF;
+	background: rgba(83, 98, 99, 0.1);
+	padding: 15px;
+	width: 60%;
+	max-width: 1000px;
+	margin: 20px auto;
+	overflow: hidden;
+	position: relative;
+	background-color: #ff1b82;
+	text-align: center; /* Asegúrate de que todo el contenido en el header y footer esté centrado horizontalmente */
+}
+
+img {
+	min-width: 10%;
+	min-height: 10%;
+	top: 10%;
+	left: 10%;
+}
+
+header {
+	font-family: 'dk smiling cat', sans-serif;
+	font-size: 40px;
+}
+
+section {
+	color: #FFFFFF;
+	background: rgba(96, 105, 6, 0.1);
+	padding: 40px;
+	text-align: center; /* Asegúrate de que todo el contenido en la sección esté centrado horizontalmente */
+	width: 50%;
+	max-width: 1350px;
+	margin: 20px auto;
+	font-size: 20px;
+}
+
+nav {
+	color: #FFFFFF;
+	background: rgba(0, 0, 0, 0.5);
+	padding: 25px;
+	text-align: center; /* Asegúrate de que todo el contenido en el nav esté centrado horizontalmente */
+	width: 55%;
+	max-width: 1300px;
+	margin: 20px auto;
+}
+
+nav li {
+	float: left;
+	list-style: none;
+}
+
+nav li a {
+	padding: 0px 20px;
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-family: century gothic;
+}
+
+footer {
+	position: relative;
+	clear: both;
+	font: 'bebas neue', sans-serif;
+	font-size: 23px;
+	text-align: center;
+}
+
+@keyframes cambiar {
+	0% {
+		margin-top: 0;
+	}
+	20% {
+		margin-top: 0;
+	}
+
+	25% {
+		margin-top: -40px;
+	}
+	50% {
+		margin-top: -40px;
+	}
+
+	55% {
+		margin-top: -80px;
+	}
+	80% {
+		margin-top: -80px;
+	}
+
+	85% {
+		margin-top: -40px;
+	}
+	95% {
+		margin-top: -40px;
+	}
+
+	100% {
+		margin-top: 0;
+	}
+}
